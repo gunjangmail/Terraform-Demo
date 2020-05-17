@@ -9,6 +9,10 @@
 # https://aka.ms/yaml
 
 trigger:
+- task: CopyFiles@2
+  inputs:
+    Contents: '**'
+    TargetFolder: 
 - master
 
 pool:
